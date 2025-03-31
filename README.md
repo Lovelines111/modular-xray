@@ -1,4 +1,5 @@
 **Xray-Nix Modular Configuration**
+
 This is a POC. It contains an example of a modular Xray (V2Ray) configuration done wit Nix.
 The idea here is to create a .nix file that will call other default files from the respective orders, then we do `nix eval` on it and convert the entire thing into Json config that we then use in `services.xray.settingsFile` or `xray -c` if you're on other distro.
 
