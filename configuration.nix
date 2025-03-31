@@ -8,7 +8,7 @@
   boot.loader.grub.enable = true;
   boot.loader.grub.device = "/dev/sda"; # not a partition like /dev/sda1
 
-  networking.hostName = "yedaNix";
+  networking.hostName = "nixos";
   networking.useDHCP = true;
 
   services.openssh.enable = true;
@@ -26,9 +26,6 @@
   isNormalUser = true;
   extraGroups = [ "wheel" "networkmanager" ];
 };
-  users.users.root = {
-    initialPassword = "Oliveoil"; # you can change it later with `passwd`
-  };
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
