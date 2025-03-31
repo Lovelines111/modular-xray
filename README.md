@@ -56,7 +56,7 @@ in
   port = 443;
   protocol = "vless";
   settings = {
-    clients = users; #reffer to the users.   <------
+    clients = users;     #call users variable.   <------
     decryption = "none";
     fallbacks = [];
   };
