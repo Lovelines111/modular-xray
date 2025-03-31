@@ -2,7 +2,9 @@
 
 This is a POC. It contains an example of a modular Xray (V2Ray) configuration done wit Nix and replicating it's famous generational approach.
 Regular Nix generations allow to backtrack xray configurations as well, but this requires reboot and thus time, plus those will be mixed with other generations.
-I wanted to make generations for xray config separate, while also making it easier to maintain the configuration using modules. Plus I wanted to test whether or not my approach was possibly doable.
+I wanted to make generations for xray config separate, while also making it easier to maintain the configuration using modules.
+Plus I wanted to test whether or not my approach was possibly doable.
+
 The idea here is to create a .nix file that will call other default files from the respective orders, then we do `nix eval` on it and convert the entire thing into Json config that we then use in `services.xray.settingsFile` or `xray -c` if you're on other distro.
 
 I left a sctipt called build.sh in the main directory that will create a new json file in ./xray/versions
