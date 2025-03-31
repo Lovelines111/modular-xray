@@ -17,3 +17,7 @@ And turns into this after we run ./build.sh:
 
 ![image](https://github.com/user-attachments/assets/af81dbc9-4c80-4b52-a27a-efd9cef9936d)
 
+
+Users must be called within the inbounds files. it can be done like so:
+
+![image](https://github.com/user-attachments/assets/16cb1239-85ff-4007-9622-d8b89b6a4c3e)
