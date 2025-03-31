@@ -50,13 +50,13 @@ Users must be called within the inbounds files. it can be done like so:
 
 ```
 let
-  users = import ../users; #call the default.nix from xray/users/
+  users = import ../users; #call xray/users/default.nix as a variable   <------
 in
 {
   port = 443;
   protocol = "vless";
   settings = {
-    clients = users; #reffer to the users.
+    clients = users; #reffer to the users.   <------
     decryption = "none";
     fallbacks = [];
   };
